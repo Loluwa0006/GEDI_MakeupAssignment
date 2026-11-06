@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.CompareTag("Apple"))
         {
-            ScoreManager.Instance.OnAppleEaten();
+            ScoreDisplay.Instance.OnAppleEaten();
             GameManager.Instance.OnAppleEaten(collision);
         }
     }

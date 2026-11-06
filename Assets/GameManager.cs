@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] Transform appleSpawnRight;
     [SerializeField] Transform appleSpawnUp;
 
+    public int CurrentScore { get; set; } = 0;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)

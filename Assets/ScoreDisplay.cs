@@ -1,14 +1,13 @@
 using TMPro;
 using UnityEngine;
 
-public class ScoreManager : MonoBehaviour
+public class ScoreDisplay : MonoBehaviour
 {
 
-    public static ScoreManager Instance { get; private set; }
+    public static ScoreDisplay Instance { get; private set; }
 
     [SerializeField] TMP_Text scoreTracker;
 
-    int currentScore = 0;
     void Start()
     {
         if (Instance != null && Instance != this)
@@ -25,8 +24,8 @@ public class ScoreManager : MonoBehaviour
     {
         if (scoreTracker != null)
         {
-            currentScore++;
-            scoreTracker.text = currentScore.ToString();
+            GameManager.Instance.CurrentScore++;
+            scoreTracker.text = GameManager.Instance.CurrentScore.ToString();
         }
     }
 }
