@@ -16,6 +16,9 @@ ScoreManager, which tracks the number of apples eaten
 SnakeBody, which inherits from player controller, to mimick snake fucntionality
 ## UML Diagram
 <!-- Attach your UML diagram here -->
+
+<img width="1700" height="2200" alt="UML GEDI Makeup-1" src="https://github.com/user-attachments/assets/cc4b0de1-a234-4914-bc9a-d27501d897e8" />
+
 ---
 # Singleton Pattern
 ---
