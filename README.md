@@ -35,7 +35,7 @@ Game manager contains a static public variable that any class can access in orde
 <!-- Explain why the Factory pattern is appropriate for this particular system. -->
 There is an unbounded amount of apples that can be spawned over the course of a playthrough, so it is important that there is a
 script dedicated to handling this. Single script responsibility means that whatever script is handling the spawning should
-only handle the spawning.
+only handle the spawning. A factory is important here as it helps to maintain single script dependcy, as well as provide an extendible platform for more spawning functionality without having to deal with dependencies if the spawning was tied to other scripts.
 ### Implementation
 <!-- Describe how the Factory pattern is implemented in your project. -->
 
